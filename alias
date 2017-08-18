@@ -1,0 +1,8 @@
+#notes
+alias mind="nano ~/mind" #expand your mind
+alias ref="nano ~/ref" #finished reflections
+alias des="nano ~/des" #designing
+alias wrd="nano ~/wrd" #new words
+alias idea="nano ~/idea" #new ideas for next {day, month, year}s
+#language utilities
+alias esp="espeak -v eo " #esperanto pronounciation
