@@ -16,11 +16,9 @@
 #i.e cqinit ~/prj/bitcoin c
 #credit https://github.com/ruben2020/codequery/blob/master/doc/HOWTO-LINUX.md
 
-
-
-cd $2 &&
+cd $1 &&
 #c,c++
-if [ $1 == 'c' ]; then
+if [ $2 == 'c' ]; then
     find . -iname "*.c"    > ./cscope.files
     find . -iname "*.cpp" >> ./cscope.files
     find . -iname "*.cxx" >> ./cscope.files
@@ -33,19 +31,19 @@ if [ $1 == 'c' ]; then
     ctags --fields=+i -n -R -L ./cscope.files
     cqmakedb -s ./myproject.db -c ./cscope.out -t ./tags -p
 #java
-elif [ $1 == 'j' ]; then
+elif [ $2 == 'j' ]; then
     find . -iname "*.java" > ./cscope.files
     cscope -cbR
     ctags --fields=+i -n -R -L ./cscope.files
     cqmakedb -s ./myproject.db -c ./cscope.out -t ./tags -p
 #python
-elif [ $1 == 'p' ]; then
+elif [ $2 == 'p' ]; then
     find . -iname "*.py"    > ./cscope.files
     pycscope -i ./cscope.files
     ctags --fields=+i -n -R -L ./cscope.files
     cqmakedb -s ./myproject.db -c ./cscope.out -t ./tags -p
 # ruby, go, javascript
-elif [ $1 == 'r' | $1 == 'g' | $1 == 'js' ]; then
+elif [ $2 == 'r' | $1 == 'g' | $2 == 'js' ]; then
     find . -iname "*.rb"    > ./cscope.files
     find . -iname "*.go"    > ./cscope.files
     find . -iname "*.js"    > ./cscope.files
