@@ -1,8 +1,18 @@
 #notes
-alias mind="nano ~/mind" #expand your mind
-alias ref="nano ~/ref" #finished reflections
-alias des="nano ~/des" #designing
-alias wrd="nano ~/wrd" #new words
-alias idea="nano ~/idea" #new ideas for next {day, month, year}s
+alias mind="nano ~/notes/mind" #expand your mind
+alias penso="nano ~/notes/penso" #reflections about thinking
+alias des="nano ~/notes/des" #designing
+alias wrd="nano ~/notes/wrd" #new words
+alias idea="nano ~/notes/idea" #new ideas
+alias vivo="nano ~/notes/vivo" #reflections about life
+alias soc="nano ~/notes/socio" #reflections about society
+alias studo="nano ~/notes/socio" #reflctions about studying
+alias musica="nano ~/notes/musica" #musical notes
+alias spa="nano ~/notes/spa" #spanish words
+
 #language utilities
 alias esp="espeak -v eo " #esperanto pronounciation
+
+#directories
+alias bib="cd ~/Documents/biblioteko"
+alias prj="cd ~/prj"
